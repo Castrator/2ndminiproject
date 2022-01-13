@@ -24,5 +24,10 @@ This directory contains the necessary data sets to be manipulated in this projec
 * Once loaded, the activity names in `extracted_sub_act` are updated accordingly.
 ### Step 4. DESCRIPTIVE *variable names*
 * From the `extracted_data` variable, the *features* columns are copied to a separate variable, `extracted_features`.
-* Once loaded, the activity names in `extracted_sub_act` are updated accordingly.
-
+* The feature names are then stored in `feature_names`.
+* To make it more descriptive, the feature names are adjusted using the `gsub()` function.
+* Afterwhich, the columns in `extracted_features` are updated with the adjusted feature names. 
+### Step 5. INDEPENDENT *Tiny Data*
+* To finish off, the separated `extracted_sub_act` and `extracted_features` are binded back together in `extracted_data` to form one single data table. 
+* The extracted data is then tidied up with a combination of `tibble`, `group_by()` and `summarise_all()` functions and stored in `tidy_data`. 
+* The data is now **clean**. 
