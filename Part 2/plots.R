@@ -18,7 +18,8 @@ filtered_data <- subset(data, data$Date == "1/2/2007" | data$Date == "2/2/2007")
 filtered_data$Date <- as.Date(filtered_data$Date, "%d/%m/%Y")
 
 # DateTime
-#   as.POSIXct() 
+#   as.POSIXct() converts the input into date-time format representing calendar dates and times
+#   paste() concatenates filtered_data$Date and filtered_data$Time into one character string
 filtered_data$DateTime <- as.POSIXct(paste(filtered_data$Date, filtered_data$Time))
 
 # PLOTTING Functions
