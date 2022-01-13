@@ -18,16 +18,16 @@ This directory contains the necessary data sets to be manipulated in this projec
 * The name of the features to be used are loaded from `features.txt`.
 * Once loaded, it is then filtered using the `grepl()` function from `dplyr` to get only the necessary variables.
 * The data with filtered features is then stored in `extracted_data`. 
-### Step 3. DESCRIPTIVE *activity names*
+#### Step 3. DESCRIPTIVE *activity names*
 * From the `extracted_data` variable, the *subject* and *activity* columns are copied to a separate variable, `extracted_sub_act`.
 * The activities are then loaded from `activity_labels.txt`. 
 * Once loaded, the activity names in `extracted_sub_act` are updated accordingly.
-### Step 4. DESCRIPTIVE *variable names*
+#### Step 4. DESCRIPTIVE *variable names*
 * From the `extracted_data` variable, the *features* columns are copied to a separate variable, `extracted_features`.
 * The feature names are then stored in `feature_names`.
 * To make it more descriptive, the feature names are adjusted using the `gsub()` function.
 * Afterwhich, the columns in `extracted_features` are updated with the adjusted feature names. 
-### Step 5. INDEPENDENT *Tiny Data*
+#### Step 5. INDEPENDENT *Tiny Data*
 * To finish off, the separated `extracted_sub_act` and `extracted_features` are binded back together in `extracted_data` to form one single data table. 
 * The extracted data is then tidied up with a combination of `tibble`, `group_by()` and `summarise_all()` functions and stored in `tidy_data`. 
 * The data is now **clean**. 
