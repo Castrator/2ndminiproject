@@ -5,7 +5,7 @@ This directory contains the necessary data sets to be manipulated in this projec
 
 * `train` - this subdirectory contains the training data set. It includes the text files *subject_test.txt*, *X_test.txt*, and *y_test.txt*.
 * `test` - this subdirectory contains the training data set
-* `activity_labels.txt` - text file that contains the labels for each activity. e.g. *WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING*
+* `activity_labels.txt` - text file that contains the labels for each activity.
 * `features.txt` - text file that contains the names of the features. 
 * `featuresinfo.txt` - text file that contains the explanation of the variables used. 
 
