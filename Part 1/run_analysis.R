@@ -47,7 +47,7 @@ extracted_data <- merged_data[, filtered_features]
 extracted_sub_act <- extracted_data %>% select(subject, activity)
 activities <- read.table("./specdata/activity_labels.txt", col.names = c("id","label"))
 #   This replaces the values in the 'activity' column to its appropriate label
-sub_act$activity <- activities[sub_act$activity, 2]
+extracted_sub_act$activity <- activities[extracted_sub_act$activity, 2]
 
 # 4. DESCRIPTIVE VARIABLE NAMES 
 
@@ -87,7 +87,7 @@ extracted_data <- cbind(extracted_sub_act, extracted_features)
 #   group_by() takes 'extracted_data' and groups it by 'subject' and 'activity'
 #   summarise_all() takes the mean of each variable in each group
 tidy_data <- tibble(extracted_data) %>%
-  group_by(subject, activity) %>%
+  group_by(Subject, Activity) %>%
   summarise_all(mean)
 
 # View() allows you to preview the data in table form within Rstudio
