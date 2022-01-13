@@ -1,6 +1,6 @@
 # 2nd Mini Project
  
-## Problem 1. UCI Human Activity Response
+## Problem 1. UCI Human Activity Recognition
 #### a. Create an R script called run_analysis.R. The script should include the following:
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement
