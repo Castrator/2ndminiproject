@@ -41,6 +41,8 @@ plot1 <- function(){
   
   dev.off() 
 }
+
+# Function call
 plot1()
 
 # Plot 2
@@ -61,6 +63,8 @@ plot2 <- function(){
   
   dev.off() 
 }
+
+# Function call
 plot2()
 
 # Plot 3
@@ -97,6 +101,8 @@ plot3 <- function(){
   
   dev.off() 
 }
+
+# Function call
 plot3()
 
 # Plot 4
@@ -153,4 +159,6 @@ plot4 <- function(){
   
   dev.off()
 }
+
+# Function call
 plot4()
